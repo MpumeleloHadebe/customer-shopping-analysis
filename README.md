@@ -78,6 +78,7 @@ group by
         when previous_purchases between 2 and 10 then 'Returning'
         else 'Loyal'
     end;
+```
 
 ---
 
@@ -185,6 +186,6 @@ Mpumelelo Hadebe
 
 ---
 
-## 📅 Date
+##  Date
 
 2026
