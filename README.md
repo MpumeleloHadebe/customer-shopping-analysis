@@ -83,7 +83,7 @@ group by
 
 ---
 
-## Power BI Dashboard
+## Power BI Dashboard ([dashboard_preview.png](dashboard/dashboard_preview.png))
 
 **Key Features:**
 - KPI Cards (Total Revenue, Avg Purchase Amount, Avg Review Rating)
