@@ -1,6 +1,6 @@
-# 🛍️ Customer Shopping Behavior Analysis
+# Customer Shopping Behavior Analysis
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes customer shopping behavior using transactional data from 3,900 purchases across various product categories. The goal is to uncover insights into spending patterns, customer segments, product preferences, and subscription behavior to guide strategic business decisions.
 
@@ -12,7 +12,7 @@ This project analyzes customer shopping behavior using transactional data from 3
 
 ---
 
-## 📁 Repository Files
+## Repository Files
 
 | File | Description |
 |------|-------------|
@@ -24,7 +24,7 @@ This project analyzes customer shopping behavior using transactional data from 3
 
 ---
 
-## 📊 Dataset Summary
+## Dataset Summary
 
 - **Rows:** 3,900
 - **Columns:** 18
@@ -36,7 +36,7 @@ This project analyzes customer shopping behavior using transactional data from 3
 
 ---
 
-## 🐍 Data Preparation ([data_cleaning.ipynb](notebooks/data_cleaning.ipynb))
+## Data Preparation ([data_cleaning.ipynb](notebooks/data_cleaning.ipynb))
 
 - Loaded dataset using pandas
 - Handled missing values in Review Rating column using median imputation by category
@@ -47,7 +47,7 @@ This project analyzes customer shopping behavior using transactional data from 3
 
 ---
 
-## 📈 SQL Analysis ([business_queries.sql](sql/business_queries.sql))
+## SQL Analysis ([business_queries.sql](sql/business_queries.sql))
 
 | # | Question |
 |---|----------|
@@ -78,3 +78,113 @@ group by
         when previous_purchases between 2 and 10 then 'Returning'
         else 'Loyal'
     end;
+
+---
+
+## Power BI Dashboard
+
+**Key Features:**
+- KPI Cards (Total Revenue, Avg Purchase Amount, Avg Review Rating)
+- Filters: Subscription Status, Gender, Location, Category, Shipping Method
+- Visuals: Revenue by subscription, Top 5 products, Revenue by category, Customer segments
+
+---
+
+## Business Recommendations
+
+| Recommendation | Action |
+|----------------|--------|
+| Boost Subscriptions | Promote exclusive benefits for subscribers (current rate: 27%) |
+| Customer Loyalty Programs | Reward repeat buyers to move them into "Loyal" segment |
+| Review Discount Policy | Balance sales boosts with margin control |
+| Product Positioning | Highlight top-rated and best-selling products in campaigns |
+| Targeted Marketing | Focus on high-revenue age groups and express shipping users |
+
+---
+
+## Repository Structure
+
+
+```text
+customer-behavior-analysis/
+│
+├── data/
+│   └── customer_shopping_behavior.csv
+│
+├── notebooks/
+│   └── data_cleaning.ipynb
+│
+├── sql/
+│   └── business_queries.sql
+│
+├── dashboard/
+│   ├── customer_dashboard.pbix
+│   └── dashboard_preview.png
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## How to Reproduce
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/customer-shopping-analysis.git
+```
+
+### 2. Install Python packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run Jupyter notebook
+
+Open:
+
+```text
+notebooks/data_cleaning.ipynb
+```
+
+### 4. Run SQL queries
+
+Execute:
+
+```text
+sql/business_queries.sql
+```
+
+in SQL Server.
+
+### 5. Open Power BI Dashboard
+
+Open:
+
+```text
+dashboard/customer_dashboard.pbix
+```
+
+---
+
+## Requirements (`requirements.txt`)
+
+```text
+pandas==2.0.3
+sqlalchemy==2.0.19
+pyodbc==5.0.1
+openpyxl==3.1.2
+```
+
+---
+
+## Author
+Mpumelelo Hadebe
+
+---
+
+## 📅 Date
+
+2026
