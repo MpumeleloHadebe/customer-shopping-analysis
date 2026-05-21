@@ -20,6 +20,7 @@ This project analyzes customer shopping behavior using transactional data from 3
 | [data_cleaning.ipynb](notebooks/data_cleaning.ipynb) | Jupyter notebook with Python code |
 | [business_queries.sql](sql/business_queries.sql) | All 10 SQL queries |
 | [customer_dashboard.pbix](dashboard/customer_dashboard.pbix) | Power BI dashboard file |
+| [presentation.pptx](presentation.pptx) | PowerPoint presentation for stakeholders |
 | [requirements.txt](requirements.txt) | Python package dependencies |
 
 ---
@@ -122,6 +123,7 @@ customer-behavior-analysis/
 │   ├── customer_dashboard.pbix
 │   └── dashboard_preview.png
 │
+├── presentation.pptx
 ├── README.md
 └── requirements.txt
 ```
@@ -133,7 +135,7 @@ customer-behavior-analysis/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/customer-shopping-analysis.git
+git clone [https://github.com/MpumeleloHadebe/customer-shopping-analysis.git
 ```
 
 ### 2. Install Python packages
